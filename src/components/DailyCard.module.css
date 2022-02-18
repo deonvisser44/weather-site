@@ -1,0 +1,84 @@
+.daily-div {
+    width: 13%;
+    background-color: rgba(238, 236, 236, 0.6);
+    border-right: 2px solid rgb(202, 196, 196);
+}
+
+.daily-div:last-child {
+    border: none;
+}
+
+.date {
+    font-size: 1.7rem;
+}
+
+.high {
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.low {
+    font-size: 2.6rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(110, 109, 109);
+}
+
+.icon {
+    width: 45%;
+    height: 30%;
+    padding: 0%;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .date {
+        font-size: 1.3rem;
+    }
+
+    .high {
+        font-size: 2.2rem;
+    }
+
+    .low {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .date {
+        font-size: 0.5rem;
+    }
+
+    .high {
+        font-size: 1rem;
+    }
+
+    .low {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .date {
+        font-size: 0.5rem;
+    }
+
+    .high {
+        font-size: 0.75rem;
+    }
+
+    .low {
+        font-size: 0.6rem;
+    }
+
+
+}

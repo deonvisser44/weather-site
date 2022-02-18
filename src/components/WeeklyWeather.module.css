@@ -1,0 +1,32 @@
+.weekly-div {
+    width: 80%;
+    height: 25vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+@media screen and (max-width: 1200px) {
+    .weekly-div {
+        width: 90%;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    .weekly-div {
+        width: 95%;
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .weekly-div {
+        width: 95%;
+        height: 9.2vh;
+    }
+}
+
