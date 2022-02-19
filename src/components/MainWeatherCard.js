@@ -18,7 +18,7 @@ function WeatherCard(props) {
         <p className={classes.row}>Low: {Math.round(props.min)}{props.symbol}</p>
         <p className={classes.row}>Real Feel: {Math.round(props.feelsLike)}{props.symbol}</p>
         <p className={classes.row}>Humidity: {props.humidity}%</p>
-        <p className={classes.row}>Wind: {props.wind} km/h</p>
+        <p className={classes.row}>Wind: {Math.round(props.wind)} km/h</p>
       </div>
     </div>
   );

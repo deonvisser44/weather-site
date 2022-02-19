@@ -100,7 +100,7 @@
 
     .row {
         font-size: 1.8rem;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 
     .left {
@@ -117,7 +117,7 @@
 
     .card {
       width: 75%;
-      height: 30vh;
+      height: 34vh;
     }
 
     .heading {
@@ -141,7 +141,7 @@
 
     .row {
         font-size: 1.8rem;
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 
     .left {
@@ -196,6 +196,18 @@
   @media screen and (max-width: 375px) {
       .row {
         font-size: 0.8rem;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
+      }
+
+      .right {
+          width: 45%;
+      }
+
+      .left {
+          width: 55%;
+      }
+
+      .card {
+          height: 34vh;
       }
   }
