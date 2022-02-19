@@ -72,10 +72,12 @@
     }
 
     .selected {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
+        height: 2.7vh;
     }
 
     .unselected {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
+        height: 2.5vh;
     }
 }
