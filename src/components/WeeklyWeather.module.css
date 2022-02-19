@@ -1,45 +1,56 @@
 .weekly-div {
-    width: 79%;
-    height: 25vh;
-    margin: 0 auto;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 79%;
+  height: 25vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  animation: weekly-div-appear 1s ease-out forwards;
+}
+
+@keyframes weekly-div-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .weekly-div {
-        width: 90%;
-        height: 25vh;
-    }
+  .weekly-div {
+    width: 90%;
+    height: 25vh;
+  }
 }
 
-@media screen and (max-width: 900px) { 
-    .weekly-div {
-        width: 70%;
-        height: 35vh;
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 900px) {
+  .weekly-div {
+    width: 70%;
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width: 500px) { 
-    .weekly-div {
-        width: 95%;
-        height: 30vh;
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 500px) {
+  .weekly-div {
+    width: 95%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width: 375px) { 
-    .weekly-div {
-        width: 95%;
-        height: 39vh;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
+@media screen and (max-width: 375px) {
+  .weekly-div {
+    width: 95%;
+    height: 39vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-

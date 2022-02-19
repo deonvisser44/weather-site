@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    animation: card-appear 1s ease-out forwards;
 }
 
 .heading {
@@ -71,6 +72,19 @@
 
 .row:last-child {
     border-bottom: none;
+}
+
+
+@keyframes card-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 1500px) {
