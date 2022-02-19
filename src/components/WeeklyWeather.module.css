@@ -33,3 +33,13 @@
     }
 }
 
+@media screen and (max-width: 375px) { 
+    .weekly-div {
+        width: 95%;
+        height: 35vh;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
+
