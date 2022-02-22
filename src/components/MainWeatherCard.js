@@ -15,7 +15,7 @@ function WeatherCard() {
         <p className={classes.desc}>{currentData.weather?.[0].description}</p>
         <p className={classes.temp}>{Math.round(currentData.main?.temp)}{symbol}</p>
 
-        <img className={classes.icon} src={`http://openweathermap.org/img/w/${currentData.weather?.[0].icon}.png`} alt="icon" />
+        <img className={classes.icon} src={`http://openweathermap.org/img/w/${currentData.weather?.[0]?.icon}.png`} alt="icon" />
       </div>
       <div className={classes.right}>
         <p className={classes.row}>High: {Math.round(currentData.main?.temp_max)}{symbol}</p>

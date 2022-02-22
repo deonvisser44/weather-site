@@ -16,7 +16,7 @@ function WeeklyWeather() {
           date={day.dt}
           minTemp={day.temp?.min}
           maxTemp={day.temp?.max}
-          icon={`http://openweathermap.org/img/w/${day.weather?.[0].icon}.png`}
+          icon={`http://openweathermap.org/img/w/${day.weather?.[0]?.icon}.png`}
         />
       ))}
     </div>

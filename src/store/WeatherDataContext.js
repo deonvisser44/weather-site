@@ -14,6 +14,7 @@ export function WeatherProvider({ children }) {
   const [lat, setLat] = useState("51.5085");
   const [lon, setLon] = useState("-0.1257");
 
+
   const getWeather = async () => {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=${measurement}&appid=93f5c861fda160b13e757c684dae80d6`
@@ -47,7 +48,6 @@ export function WeatherProvider({ children }) {
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   const getSearch = (event) => {

@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background: url("https://capturedbyjacob.files.wordpress.com/2012/11/misty-morning-teglholmen.jpg");
+  /* background: url("https://capturedbyjacob.files.wordpress.com/2012/11/misty-morning-teglholmen.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto; */
+  background-color: rgb(183, 194, 204);
   height: 100vh;
 }
 

@@ -15,7 +15,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    box-shadow: 0 30px 40px rgba(0,0,0,.2);
     animation: card-appear 1s ease-out forwards;
 }
 
