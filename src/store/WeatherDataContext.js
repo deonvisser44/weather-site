@@ -32,7 +32,6 @@ export function WeatherProvider({ children }) {
     setLat(data.coord.lat);
     setLon(data.coord.lon);
     console.log(data);
-    setLoadingCurrentWeather(false);
   };
 
   // API get method to get daily data for the next 8 days
@@ -44,7 +43,6 @@ export function WeatherProvider({ children }) {
     const weather = await res.json();
     setEightDayData(weather);
     console.log(weather);
-    setLoadingEightDayData(false);
   };
 
 
