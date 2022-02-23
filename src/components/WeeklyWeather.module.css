@@ -1,8 +1,8 @@
 .weekly-div {
   width: 79%;
-  height: 25vh;
+  height: 24vh;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -18,6 +18,12 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .weekly-div {
+    height: 28vh;
   }
 }
 
