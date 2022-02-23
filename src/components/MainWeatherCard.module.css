@@ -11,6 +11,28 @@
     
 }
 
+/* .bg {
+    background-image: url('https://images.all-free-download.com/images/graphiclarge/cloudy_day_5_212307.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(212, 212, 212, 0.6);
+}
+
 .left {
     display: flex;
     flex-direction: column;
@@ -18,7 +40,6 @@
     height: 100%;
     width: 55%;
     z-index: 1;
-
 }
 
 .right {
@@ -27,6 +48,7 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
+
 }
 
 .heading {

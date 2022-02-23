@@ -4,12 +4,15 @@ import Measurement from "./Measurement";
 import { WeatherContext } from "../store/WeatherDataContext";
 
 function SearchForm() {
+
+  // Passing through satet from context
   const { updateSearch } = useContext(WeatherContext);
   const { getSearch } = useContext(WeatherContext);
   const { handleImperialMeasurement } = useContext(WeatherContext);
   const { handleMetricMeasurement } = useContext(WeatherContext);
   const { measurement } = useContext(WeatherContext);
 
+  // Search bar component
   return (
     <div>
       <form className={classes.form} onSubmit={getSearch}>

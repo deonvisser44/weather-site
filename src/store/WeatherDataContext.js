@@ -1,12 +1,15 @@
 import { useState, createContext, useEffect } from "react";
 
+
+// Create Context to use state throughout all components, didnt want to do prop drilling from App.js
 export const WeatherContext = createContext({});
 
 export function WeatherProvider({ children }) {
+
+
+  // Setting state that will be used throughout all components
   const [currentData, setCurrentData] = useState([]);
   const [eightDayData, setEightDayData] = useState([]);
-  const [loadingCurrentWeather, setLoadingCurrentWeather] = useState(true);
-  const [loadingEightDayData, setLoadingEightDayData] = useState(true);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("London");
   const [measurement, setMeasurement] = useState("metric");
@@ -14,7 +17,8 @@ export function WeatherProvider({ children }) {
   const [lat, setLat] = useState("51.5085");
   const [lon, setLon] = useState("-0.1257");
 
-
+// API get method to get current data for the MainWeatherCard, as well as the longitude and latitude that is needed for 8 day
+// forecast
   const getWeather = async () => {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=${measurement}&appid=93f5c861fda160b13e757c684dae80d6`
@@ -31,6 +35,8 @@ export function WeatherProvider({ children }) {
     setLoadingCurrentWeather(false);
   };
 
+  // API get method to get daily data for the next 8 days
+
   const getDailyWeather = async () => {
     const res = await fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=${measurement}&appid=93f5c861fda160b13e757c684dae80d6`
@@ -41,10 +47,14 @@ export function WeatherProvider({ children }) {
     setLoadingEightDayData(false);
   };
 
+
+  // useEffect that calls the fetch functions
   useEffect(() => {
     getWeather();
     getDailyWeather();
   }, [query, measurement, lat, lon]);
+
+  //functions to get input from the Search input
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -55,6 +65,8 @@ export function WeatherProvider({ children }) {
     setQuery(search);
     setSearch("");
   };
+
+  // functions to handle whether temperatures should be shown in celcius or fahrenheit
 
   const handleImperialMeasurement = (event) => {
     event.preventDefault();
@@ -68,13 +80,13 @@ export function WeatherProvider({ children }) {
     setSymbol("°C");
   };
 
+  // Provider values (states and functions ) set to be passed through to all the children components
+
   return (
     <WeatherContext.Provider
       value={{
         currentData,
         eightDayData,
-        loadingCurrentWeather,
-        loadingEightDayData,
         search,
         query,
         measurement,

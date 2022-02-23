@@ -6,8 +6,10 @@ import { WeatherContext } from "../store/WeatherDataContext";
 
 function WeeklyWeather() {
 
+  // Passing data through that is created from context
   const { eightDayData } = useContext(WeatherContext);
 
+  //component that holds daily components
   return (
     <div className={classes["weekly-div"]}>
       {eightDayData.daily?.map((day) => (

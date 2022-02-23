@@ -3,10 +3,16 @@ import classes from "./MainWeatherCard.module.css";
 import { WeatherContext } from "../store/WeatherDataContext";
 
 function WeatherCard() {
+
+  // getting data passed through from context
   const { currentData } = useContext(WeatherContext);
   const { symbol } = useContext(WeatherContext);
   return (
+
+    //Main component that displays current weather data
     <div className={classes.card}>
+      <div className={classes.bg}>
+        <div className={classes.overlay}>
         <div className={classes.left}>
           <p className={classes.heading}>
             {currentData.name}, {currentData.sys?.country}
@@ -39,6 +45,8 @@ function WeatherCard() {
           <p className={classes.row}>Humidity: {currentData.main?.humidity}%</p>
           <p className={classes.row}>Wind: {currentData.wind?.speed} km/h</p>
         </div>
+        </div>
+      </div>
     </div>
   );
 }
