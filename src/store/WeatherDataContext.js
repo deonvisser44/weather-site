@@ -16,6 +16,9 @@ export function WeatherProvider({ children }) {
   const [symbol, setSymbol] = useState("°C");
   const [lat, setLat] = useState("51.5085");
   const [lon, setLon] = useState("-0.1257");
+  const [desc, setDesc] = useState()
+  const [time, setTime] = useState();
+  const [timezone, setTimezone] = useState();
 
 // API get method to get current data for the MainWeatherCard, as well as the longitude and latitude that is needed for 8 day
 // forecast
@@ -31,6 +34,9 @@ export function WeatherProvider({ children }) {
     setCurrentData(data);
     setLat(data.coord.lat);
     setLon(data.coord.lon);
+    setDesc(data.weather?.[0]?.main)
+    setTime(data.dt);
+    setTimezone(data.timezone)
     console.log(data);
   };
 
@@ -47,10 +53,14 @@ export function WeatherProvider({ children }) {
 
 
   // useEffect that calls the fetch functions
+
   useEffect(() => {
     getWeather();
+  }, [query, measurement]);
+
+  useEffect(() => {
     getDailyWeather();
-  }, [query, measurement, lat, lon]);
+  }, [lat, lon, measurement])
 
   //functions to get input from the Search input
 
@@ -91,6 +101,9 @@ export function WeatherProvider({ children }) {
         symbol,
         lat,
         lon,
+        desc,
+        time,
+        timezone,
         updateSearch,
         getSearch,
         handleImperialMeasurement,

@@ -11,7 +11,7 @@
     
 }
 
-/* .bg {
+.bgclouds {
     background-image: url('https://images.all-free-download.com/images/graphiclarge/cloudy_day_5_212307.jpg');
     position: absolute;
     background-repeat: no-repeat;
@@ -21,7 +21,66 @@
     right: 0;
     bottom: 0;
     display: flex;
-} */
+}
+.bgrain {
+    background-image: url('https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2018/02/GettyImages-476026368_169200751_239531242.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.bgthunderstorm {
+    background-image: url('https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2020/07/20031940/bellbizdevoe.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.bgdrizzle {
+    background-image: url('https://s3.envato.com/files/311180107/Lake%20view%20through%20window%20in%20rainy%20day.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.bgsnow {
+    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/0A72/production/_123347620_ll.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.bgclear {
+    background-image: url('https://images.unsplash.com/photo-1566734904077-42a83eee31f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
 
 .overlay {
     position: absolute;
@@ -30,7 +89,7 @@
     right: 0;
     bottom: 0;
     display: flex;
-    background-color: rgba(212, 212, 212, 0.6);
+    background-color: rgba(212, 212, 212, 0.7);
 }
 
 .left {
@@ -51,35 +110,34 @@
 
 }
 
-.heading {
-    font-size: 3rem;
+.city {
+    font-size: 4rem;
     padding: 0;
     margin: 10px 0px 0px 20px;
-
+    margin-left: 5%;
 }
 
 .desc {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
-    padding-bottom: 30px;
+    margin-left: 5%;
+    padding-bottom: 35px;
     text-transform: uppercase; 
 }
 
-.icon {
-    width: 50%;
-    height: 50%;
+.time{
+    font-size: 3rem;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .temp {
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 0;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 .row {
