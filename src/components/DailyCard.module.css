@@ -1,7 +1,7 @@
 .daily-div {
     width: 13%;
-    background-color: rgba(177, 174, 174, 0.6);
-    border-right: 2px solid rgb(202, 196, 196);
+    background-color: rgba(238, 235, 235, 0.6);
+    border-right: 2px solid rgb(143, 142, 142);
 }
 
 .daily-div:last-child {
