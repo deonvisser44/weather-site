@@ -1,18 +1,17 @@
 .measurement {
-    margin-left: 25%;
     width: 5%;
-    
+    margin-top: 0.5vh;
 }
 
 .selected {
     width: 50%;
     height: 4vh;
     font-size: 1.5rem;
-    color: rgb(107, 107, 107);
+    color: rgb(255, 255, 255);
     background: linear-gradient(
         80deg,
-        rgb(219, 203, 55) 0%,
-        rgb(248, 162, 64) 100%
+        rgb(154, 201, 255) 0%,
+        rgb(63, 162, 255) 100%
       );
     border: none;
 }
@@ -23,10 +22,10 @@
 
 .unselected {
     width: 45%;
-    color: rgb(107, 107, 107);
+    color: rgb(252, 252, 252);
     height: 3.5vh;
     font-size: 1.5rem;
-    background-color: rgb(214, 208, 186);
+    background-color: rgb(160, 160, 160);
     border: none;
 }
 
@@ -37,15 +36,16 @@
 @media screen and (max-width: 1700px) {
     .measurement {
         width: 8%;
-        margin-left: 10%;
     }
 
     .selected {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        height: 2rem;
     }
 
     .unselected {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        height: 1.8rem;
     }
 }
 
@@ -53,22 +53,38 @@
 @media screen and (max-width: 900px) {
     .measurement {
         width: 15%;
-        margin-left: 5%;
     }
 
     .selected {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .unselected {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .measurement {
-        width: 15%;
-        margin-left: 5%;
+        width: 20%;
+        margin-bottom: 2vh;
+    }
+
+    .selected {
+        font-size: 1rem;
+        height: 4vh;
+    }
+
+    .unselected {
+        font-size: 1rem;
+        height: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .measurement {
+        width: 20%;
+        margin-bottom: 5%;
     }
 
     .selected {

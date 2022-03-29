@@ -1,5 +1,5 @@
 .card {
-    width: 40%;
+    width: 50%;
     height:40vh;
     border-radius: 15px;
     margin: 0 auto;
@@ -13,68 +13,32 @@
 
 .bgclouds {
     background-image: url('https://images.all-free-download.com/images/graphiclarge/cloudy_day_5_212307.jpg');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
 }
 .bgrain {
     background-image: url('https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2018/02/GettyImages-476026368_169200751_239531242.jpg');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
 }
 
 .bgthunderstorm {
     background-image: url('https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2020/07/20031940/bellbizdevoe.jpg');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
 }
 
 .bgdrizzle {
     background-image: url('https://s3.envato.com/files/311180107/Lake%20view%20through%20window%20in%20rainy%20day.jpg');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
 }
 
 .bgsnow {
     background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/0A72/production/_123347620_ll.jpg');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
 }
 
 .bgclear {
     background-image: url('https://images.unsplash.com/photo-1566734904077-42a83eee31f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+}
+
+.bgclear, .bgclouds, .bgdrizzle, .bgrain, .bgthunderstorm, .bgsnow {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 15px;
     top: 0;
     left: 0;
     right: 0;
@@ -90,6 +54,7 @@
     bottom: 0;
     display: flex;
     background-color: rgba(212, 212, 212, 0.7);
+    border-radius: 15px;
 }
 
 .left {
@@ -99,6 +64,7 @@
     height: 100%;
     width: 55%;
     z-index: 1;
+    border-radius: 15px 0 0 15px;
 }
 
 .right {
@@ -107,7 +73,7 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-
+    border-radius: 0 15px 15px 0;
 }
 
 .city {
@@ -141,15 +107,17 @@
 }
 
 .row {
+    display: flex;
     text-align: left;
+    align-items: center;
     font-size: 2rem;
     color: rgb(56, 56, 56);
     margin: 0;
     padding: 0;
     padding-left: 10px;
-    line-height: 4rem;
     height: 20%;
     border-bottom: 1px solid rgb(49, 49, 49);
+    vertical-align: middle;
 }
 
 .row:last-child {
@@ -178,17 +146,13 @@
         height: 40%;
         width: 40%;
     }
-
-    .row {
-        line-height: 4rem;
-    }
 }
 
 @media screen and (max-width: 1500px) {
 
     .card {
-      width: 45%;
-      height: 30vh;
+      width: 55%;
+      height: 45vh;
     }
 
     .city {
@@ -210,12 +174,11 @@
     }
 
     .temp {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .row {
         font-size: 1.8rem;
-        line-height: 2.5rem;
     }
 
     .left {
@@ -231,27 +194,22 @@
 @media screen and (max-width: 1100px) {
 
     .card {
-      width: 75%;
-      height: 34vh;
+      width: 65%;
+      height: 45vh;
     }
 
     .city {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .time{
-        font-size: 2.2rem;
+        font-size: 2rem;
         padding-bottom: 4%;
     }
 
     .desc {
-        font-size: 1.5rem;
-        padding-bottom: 8%;
-    }
-
-    .icon {
-        width: 50%;
-        height: 50%;
+        font-size: 1.3rem;
+        padding-bottom: 5%;
     }
 
     .temp {
@@ -261,15 +219,54 @@
 
     .row {
         font-size: 1.8rem;
-        line-height: 2.5rem;
     }
 
     .left {
-        width: 45%;
+        width: 60%;
     }
 
     .right {
+        width: 40%;
+    }
+
+  }
+
+  @media screen and (max-width: 850px) {
+
+    .card {
+      width: 70%;
+      height: 45vh;
+    }
+
+    .city {
+        font-size: 2.8rem;
+    }
+
+    .time{
+        font-size: 2rem;
+        padding-bottom: 4%;
+    }
+
+    .desc {
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+    }
+
+    .temp {
+        font-size: 6rem;
+        margin-bottom: 0;
+    }
+
+    .row {
+        font-size: 1.8rem;
+    }
+
+    .left {
         width: 55%;
+    }
+
+    .right {
+        width: 45%;
     }
 
   }
@@ -277,7 +274,7 @@
 @media screen and (max-width: 600px) {
 
     .card {
-      width: 75%;
+      width: 80%;
       height: 30vh;
     }
 
@@ -306,7 +303,6 @@
 
     .row {
         font-size: 1rem;
-        line-height: 2.3rem;
     }
 
     .left {
@@ -320,24 +316,33 @@
   }
 
   @media screen and (max-width: 375px) {
+
+
+    .city {
+        font-size: 1.3rem;
+    }
+
+    .time {
+        font-size: 1rem;
+    }
       .row {
         font-size: 0.8rem;
-        line-height: 2.2rem;
       }
 
       .right {
-          width: 42%;
+          width: 48%;
       }
 
       .left {
-          width: 58%;
+          width: 52%;
       }
 
       .card {
           height: 34vh;
+          width: 85%;
       }
 
       .temp {
-          font-size: 3.3rem;
+          font-size: 2,5rem;
       }
   }

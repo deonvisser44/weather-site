@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: space-around;
   animation: weekly-div-appear 1s ease-out forwards;
+  border-radius: 15px;
 }
 
 @keyframes weekly-div-appear {
@@ -23,7 +24,7 @@
 
 @media screen and (max-width: 1800px) {
   .weekly-div {
-    height: 28vh;
+    height: 31vh;
   }
 }
 
@@ -31,6 +32,7 @@
   .weekly-div {
     width: 90%;
     height: 25vh;
+    margin-top: 5vh;
   }
 }
 

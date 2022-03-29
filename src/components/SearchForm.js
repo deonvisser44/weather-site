@@ -16,6 +16,7 @@ function SearchForm() {
   return (
     <div>
       <form className={classes.form} onSubmit={getSearch}>
+        <div className={classes.container}>
         <input
           className={classes["input-field"]}
           spellCheck="false"
@@ -25,6 +26,7 @@ function SearchForm() {
           onChange={updateSearch}
         />
         <button className={classes["search-button"]}>Search</button>
+        </div>
         <Measurement
           handleImp={handleImperialMeasurement}
           handleMet={handleMetricMeasurement}

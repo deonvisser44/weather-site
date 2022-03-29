@@ -42,35 +42,35 @@ function WeatherCard() {
       >
         <div className={classes.overlay}>
           <div className={classes.left}>
-            <p className={classes.city}>
+            <div className={classes.city}>
               {currentData.name}, {currentData.sys?.country}
-            </p>
-            <p className={classes.time}>{`${hours}:${minutes} ${timeOfDay}`}</p>
-            <p className={classes.desc}>
+            </div>
+            <div className={classes.time}>{`${hours}:${minutes} ${timeOfDay}`}</div>
+            <div className={classes.desc}>
               {currentData.weather?.[0].description}
-            </p>
-            <p className={classes.temp}>
+            </div>
+            <div className={classes.temp}>
               {Math.round(currentData.main?.temp)}
               {symbol}
-            </p>
+            </div>
           </div>
           <div className={classes.right}>
-            <p className={classes.row}>
+            <div className={classes.row}>
               High: {Math.round(currentData.main?.temp_max)}
               {symbol}
-            </p>
-            <p className={classes.row}>
+            </div>
+            <div className={classes.row}>
               Low: {Math.round(currentData.main?.temp_min)}
               {symbol}
-            </p>
-            <p className={classes.row}>
+            </div>
+            <div className={classes.row}>
               Real Feel: {Math.round(currentData.main?.feels_like)}
               {symbol}
-            </p>
-            <p className={classes.row}>
+            </div>
+            <div className={classes.row}>
               Humidity: {currentData.main?.humidity}%
-            </p>
-            <p className={classes.row}>Wind: {currentData.wind?.speed} km/h</p>
+            </div>
+            <div className={classes.row}>Wind: {currentData.wind?.speed} km/h</div>
           </div>
         </div>
       </div>
