@@ -102,10 +102,19 @@
     .measurement{
         margin-bottom: 4%;
         width: 28%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
     }
 
     .selectedC, .selectedF,  .unselectedC, .unselectedF {
         font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .selectedC p, .selectedF p,  .unselectedC p, .unselectedF p{
         text-align: center;
     }
 }
