@@ -101,7 +101,12 @@
 @media screen and (max-width: 400px) {
     .measurement{
         margin-bottom: 4%;
-        width: 25%;
+        width: 28%;
+    }
+
+    .selectedC, .selectedF,  .unselectedC, .unselectedF {
+        font-size: 0.8rem;
+        text-align: center;
     }
 }
 
@@ -113,6 +118,6 @@
     }
 
     .selectedC, .selectedF,  .unselectedC, .unselectedF {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
