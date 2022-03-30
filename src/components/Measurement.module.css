@@ -8,6 +8,7 @@
 .selectedC {
     width: 50%;
     height: 100%;
+    text-align: center;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background: linear-gradient(
@@ -22,6 +23,7 @@
 .selectedF {
     width: 50%;
     height: 100%;
+    text-align: center;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background: linear-gradient(
@@ -41,6 +43,7 @@
     width: 50%;
     color: rgb(252, 252, 252);
     height: 100%;
+    text-align: center;
     font-size: 1.5rem;
     background-color: rgb(160, 160, 160);
     border: none;
@@ -51,6 +54,7 @@
     width: 50%;
     color: rgb(252, 252, 252);
     height: 100%;
+    text-align: center;
     font-size: 1.5rem;
     background-color: rgb(160, 160, 160);
     border: none;
