@@ -7,8 +7,7 @@
     flex-direction: row;
     box-shadow: 0 30px 40px rgba(0,0,0,.2);
     animation: card-appear 1s ease-out forwards;
-    z-index: 0;
-    
+    z-index: 0;  
 }
 
 .bgclouds {
@@ -53,7 +52,7 @@
     right: 0;
     bottom: 0;
     display: flex;
-    background-color: rgba(212, 212, 212, 0.7);
+    background-color: rgba(212, 212, 212, 0.8);
     border-radius: 15px;
 }
 
@@ -103,7 +102,7 @@
     font-size: 5rem;
     padding: 0;
     margin: 0;
-    margin-left: 5%;
+    align-self: center;
 }
 
 .row {
@@ -231,11 +230,11 @@
 
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 950px) {
 
     .card {
       width: 70%;
-      height: 45vh;
+      height: 40vh;
     }
 
     .city {
@@ -276,6 +275,7 @@
     .card {
       width: 80%;
       height: 30vh;
+      margin-top: 3%;
     }
 
     .city {

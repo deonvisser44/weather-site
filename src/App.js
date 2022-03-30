@@ -5,6 +5,7 @@ import WeeklyWeather from "./components/WeeklyWeather";
 import { WeatherProvider } from "./store/WeatherDataContext";
 
 function App() {
+
   return (
     <div className="App">
       <WeatherProvider>

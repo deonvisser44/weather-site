@@ -19,6 +19,7 @@ export function WeatherProvider({ children }) {
   const [desc, setDesc] = useState()
   const [time, setTime] = useState();
   const [timezone, setTimezone] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
 // API get method to get current data for the MainWeatherCard, as well as the longitude and latitude that is needed for 8 day
 // forecast
@@ -38,6 +39,7 @@ export function WeatherProvider({ children }) {
     setTime(data.dt);
     setTimezone(data.timezone)
     console.log(data);
+    setIsLoading(false);
   };
 
   // API get method to get daily data for the next 8 days
@@ -104,6 +106,7 @@ export function WeatherProvider({ children }) {
         desc,
         time,
         timezone,
+        isLoading,
         updateSearch,
         getSearch,
         handleImperialMeasurement,

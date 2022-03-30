@@ -17,7 +17,7 @@
 .input-field {
   height: 30%;
   width: 70%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
   border: none;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@
   height: 30%;
   width: 30%;
   font-size: 2rem;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 15px 15px 0;
   border: none;
   margin: 0;
   padding: 0px;
@@ -85,7 +85,7 @@
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
 
   .form {
     flex-direction: row;
@@ -101,20 +101,25 @@
     margin-top: 2vh;
     margin-bottom: 1.5vh;
   }
+
+  .search-button, .input-field {
+    font-size: 1.8rem;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 
   .form {
     flex-direction: column;
     height: 14vh;
+    align-items: center;
   }
   .container {
     align-self: center;
     display: flex;
     width: 80%;
     flex-direction: row;
-    margin-left: 10%;
+    margin-left: 0;
     margin-top: 3vh;
     margin-bottom: 1.5vh;
   }
@@ -135,7 +140,7 @@
     padding: 0;
     margin-top: 3vh;
     margin-bottom: 1vh;
-    height: 4vh;
+    height: 6vh;
     width: 90%;
   }
 

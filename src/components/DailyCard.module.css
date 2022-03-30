@@ -1,5 +1,6 @@
 .daily-div {
     width: 13%;
+    height: fit-content;
     background-color: rgba(236, 244, 255, 0.2);
     border-right: 1px solid rgba(248, 246, 246, 0.8);
 }
@@ -59,11 +60,12 @@
 
     .daily-div {
         box-shadow: 0 30px 40px rgba(0,0,0,.1);
+        height: fit-content;
     }
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
 
 
     .date {
@@ -79,7 +81,7 @@
     }
 
     .daily-div {
-        height: 49%;
+        height: fit-content;
         width: 23%;
         border-right: none;
         box-shadow: 0 30px 40px rgba(0,0,0,.1);

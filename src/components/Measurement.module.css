@@ -1,11 +1,13 @@
 .measurement {
     width: 5%;
+    height: 4vh;
     margin-top: 0.5vh;
+    border-radius: 12px;
 }
 
-.selected {
+.selectedC {
     width: 50%;
-    height: 4vh;
+    height: 100%;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background: linear-gradient(
@@ -13,23 +15,49 @@
         rgb(154, 201, 255) 0%,
         rgb(63, 162, 255) 100%
       );
+    border-radius: 12px 0 0 12px;
     border: none;
 }
 
-.selected:hover{
+.selectedF {
+    width: 50%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(
+        80deg,
+        rgb(154, 201, 255) 0%,
+        rgb(63, 162, 255) 100%
+      );
+    border-radius: 0 12px 12px 0;
+    border: none;
+}
+
+.selectedC:hover, .selectedF:hover{
     cursor: pointer;
 }
 
-.unselected {
-    width: 45%;
+.unselectedC {
+    width: 50%;
     color: rgb(252, 252, 252);
-    height: 3.5vh;
+    height: 100%;
     font-size: 1.5rem;
     background-color: rgb(160, 160, 160);
     border: none;
+    border-radius: 12px 0 0 12px;
 }
 
-.unselected:hover{
+.unselectedF {
+    width: 50%;
+    color: rgb(252, 252, 252);
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(160, 160, 160);
+    border: none;
+    border-radius: 0 12px 12px 0;
+}
+
+.unselectedC:hover, .unselectedF:hover{
     cursor: pointer;
 }
 
@@ -38,62 +66,49 @@
         width: 8%;
     }
 
-    .selected {
-        font-size: 1.3rem;
-        height: 2rem;
-    }
-
-    .unselected {
-        font-size: 1.3rem;
-        height: 1.8rem;
+    .selectedC, .selectedF,  .unselectedC, .unselectedF {
+        font-size: 1rem;
     }
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     .measurement {
-        width: 15%;
+        width: 12%;
     }
 
-    .selected {
-        font-size: 1.2rem;
-    }
-
-    .unselected {
-        font-size: 1.2rem;
+    .selectedC, .selectedF,  .unselectedC, .unselectedF {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .measurement {
-        width: 20%;
-        margin-bottom: 2vh;
+        width: 16%;
+        margin-left: 2%;
     }
 
-    .selected {
+    .selectedC, .selectedF,  .unselectedC, .unselectedF {
         font-size: 1rem;
-        height: 4vh;
     }
 
-    .unselected {
-        font-size: 1rem;
-        height: 3.5vh;
+}
+
+@media screen and (max-width: 400px) {
+    .measurement{
+        margin-bottom: 4%;
+        width: 25%;
     }
 }
 
 @media screen and (max-width: 350px) {
     .measurement {
-        width: 20%;
+        height: 3vh;
+        width: 25%;
         margin-bottom: 5%;
     }
 
-    .selected {
-        font-size: 0.65rem;
-        height: 2.7vh;
-    }
-
-    .unselected {
-        font-size: 0.65rem;
-        height: 2.5vh;
+    .selectedC, .selectedF,  .unselectedC, .unselectedF {
+        font-size: 0.8rem;
     }
 }
