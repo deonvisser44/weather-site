@@ -7,8 +7,8 @@ function Measurement(props) {
 
   return (
     <div className={classes.measurement}>
-        <button className={`${props.measurement === 'metric' ? classes.selectedC : classes.unselectedC}`} onClick={props.handleMet}><p>°C</p></button>
-        <button className={`${props.measurement === 'imperial' ? classes.selectedF : classes.unselectedF}`} onClick={props.handleImp}><p>°F</p></button>
+        <button className={`${props.measurement === 'metric' ? classes.selectedC : classes.unselectedC}`} onClick={props.handleMet}><span>°C</span></button>
+        <button className={`${props.measurement === 'imperial' ? classes.selectedF : classes.unselectedF}`} onClick={props.handleImp}><span>°F</span></button>
     </div>
   )
 }
